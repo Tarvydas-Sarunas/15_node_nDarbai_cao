@@ -1,0 +1,16 @@
+GET http://localhost:3000
+
+### paima visus itemus is db
+GET http://localhost:3000/api/items
+
+### prideti viena to do
+POST http://localhost:3000/api/items
+Content-Type: application/json
+
+{
+  "item_title": "Isnesk siuksles",
+  "item_timestamp": "2023-12-27"
+}
+
+### istrina viena pagal id is DB
+DELETE  http://localhost:3000/api/items/2
